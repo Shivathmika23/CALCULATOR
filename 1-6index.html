@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calci</title>
+    <link rel="stylesheet" href="1-6style.css">
+</head>
+<body>
+    <!-- basic structure of calculator -->
+    <center>
+        <div class="parent">
+            
+            <input type="text" id="id1" style="font-size: 40px;height: 60px;width: 293px;border-radius: 5%;background-color: rgb(174, 174, 174);text-align: right;" aria-colspan="4">
+        
+            <table>
+        <tr>
+            <td><button id="id2" style="background-color: rgb(175, 168, 168);color: black;" onclick="ac()">AC</button></td>
+            <td><button id="id3" style="background-color: rgb(175, 168, 168);color: black;" onclick="give('+/-')">+/-</button></td>
+            <td><button id="id4" style="background-color: rgb(175, 168, 168);color: black;" onclick="give('%')">%</button></td>
+            <td><button id="id5" style="background-color:goldenrod" onclick="give('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="id6" onclick="give('7')">7</button></td>
+            <td><button id="id7" onclick="give('8')">8</button></td>
+            <td><button id="id8" onclick="give('9')">9</button></td>
+            <td><button id="id9" style="background-color:goldenrod" onclick="give('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button id="id10" onclick="give('4')">4</button></td>
+            <td><button id="id11" onclick="give('5')">5</button></td>
+            <td><button id="id12" onclick="give('6')">6</button></td>
+            <td><button id="id13" style="background-color:goldenrod" onclick="give('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="id14" onclick="give('1')">1</button></td>
+            <td><button id="id15" onclick="give('2')">2</button></td>
+            <td><button id="id16" onclick="give('3')">3</button></td>
+            <td><button id="id17" style="background-color:goldenrod" onclick="give('+')">+</button></td>
+        </tr>
+        <tr >
+            <td colspan="2"  style="background-color: rgb(83, 80, 80);border-radius: 30%;"><button id="id18" style="font-size: 30px;" onclick="give('0')">0</button></td>
+            <td><button id="id20" onclick="give('.')">.</button></td>
+            <td><button id="id21" style="background-color:goldenrod" onclick="calci()">=</button></td>
+        </tr>
+    </table>
+</div>
+</center>
+    <script src="1-6script.js"></script>
+</body>
+</html>
